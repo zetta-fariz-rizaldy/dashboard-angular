@@ -1,0 +1,54 @@
+.bottom-side-menu-container
+    width: 430px
+    color: white
+    height: 400px
+    // background-color: white
+    margin: 67px 80px 50px 0
+
+    .bottom-side-menu-header
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin-bottom: 15px
+
+        h3
+            font-weight: 500
+        
+        small
+            font-weight: 100
+            cursor: pointer
+    
+    .bottom-side-menu-tiles-container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        position: relative
+
+        .bottom-side-menu-tiles
+            cursor: pointer
+            margin-top: 20px
+            background-color: white
+            width: 210px
+            height: 120px
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            background-repeat: no-repeat
+            background-size: cover
+            
+            small
+                color: #964850
+                background-color: transparent
+                font-weight: bold
+                font-weight: 700
+                margin: 0 0 10px 10px
+
+        .bottom-side-menu-tiles:after
+            content: "+"
+            position: absolute
+            top: 20px
+            right: 0
+            background-color: #964850
+            color: white
+            padding: 5px
+            border-bottom-left-radius: 50%

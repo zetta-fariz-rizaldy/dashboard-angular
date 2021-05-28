@@ -1,0 +1,18 @@
+<div class="bottom-side-menu-container">
+  <div class="bottom-side-menu-header">
+    <h3>Channels</h3>
+    <small>Browse all channels</small>
+  </div>
+  <hr />
+  <div class="bottom-side-menu-tiles-container">
+    <div
+      *ngFor="let item of items"
+      class="bottom-side-menu-tiles"
+      [style.background-image]="'url(' + item.url + ')'"
+    >
+      <small>{{ item.name }}</small>
+    </div>
+  </div>
+  <br />
+  <hr />
+</div>

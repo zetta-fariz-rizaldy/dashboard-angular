@@ -1,0 +1,28 @@
+<div class="top-side-menu-container">
+  <div class="top-side-menu-header">
+    <h3>Activity</h3>
+    <small>View timeline /Filter activities</small>
+  </div>
+  <hr />
+  <div *ngFor="let item of items" class="top-side-menu-tiles">
+    <div
+      class="top-side-menu-tiles-pic"
+      [style.background-image]="'url(' + item.url + ')'"
+    ></div>
+    <div class="top-side-menu-tiles-content">
+      <div class="content-first-row">
+        <p>{{ item.name }}</p>
+        <small>{{ item.action }}</small>
+      </div>
+      <div class="content-second-row">
+        <small>{{ item.preview }}</small>
+      </div>
+      <div class="content-third-row">
+        <img src="{{ item.icon }} " />
+        <small>{{ item.timestamp }}</small>
+      </div>
+    </div>
+  </div>
+  <br />
+  <hr />
+</div>

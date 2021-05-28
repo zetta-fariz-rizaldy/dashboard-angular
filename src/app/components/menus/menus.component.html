@@ -1,0 +1,84 @@
+<div *ngFor="let item of items" class="menus-container">
+  <div class="menus-header">
+    <h3>{{ item.menu_name }}</h3>
+    <small>{{ item.menu_action }}</small>
+  </div>
+  <div class="menus-tiles">
+    <div class="top-row">
+      <div
+        class="menus-main-tile"
+        [style.background-image]="
+          'url(' + item.menu_main_tile.til_background_image + ')'
+        "
+      >
+        <h3>{{ item.menu_main_tile.tile_first_text }}</h3>
+        <div class="background-white">
+          <small>{{ item.menu_main_tile.tile_second_text }}</small>
+          <small class="number-viewers-big">{{
+            item.menu_main_tile.tile_third_text
+          }}</small>
+        </div>
+      </div>
+      <div class="right-menus-side-tiles">
+        <div
+          class="menus-side-tiles"
+          [style.background-image]="
+            'url(' + item.menu_side_tiles[0].tile_background_image[0].url + ')'
+          "
+        >
+          <small>{{ item.menu_side_tiles[0].tile_first_text }}</small>
+          <small>{{ item.menu_side_tiles[0].tile_second_text }}</small>
+        </div>
+        <div
+          class="menus-side-tiles"
+          [style.background-image]="
+            'url(' + item.menu_side_tiles[0].tile_background_image[1].url + ')'
+          "
+        >
+          <small>{{ item.menu_side_tiles[1].tile_first_text }}</small>
+          <small>{{ item.menu_side_tiles[1].tile_second_text }}</small>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div
+        class="menus-side-tiles"
+        [style.background-image]="
+          'url(' + item.menu_side_tiles[0].tile_background_image[2].url + ')'
+        "
+      >
+        <small>{{ item.menu_side_tiles[2].tile_first_text }}</small>
+        <small>{{ item.menu_side_tiles[2].tile_second_text }}</small>
+      </div>
+      <div
+        class="menus-side-tiles"
+        [style.background-image]="
+          'url(' + item.menu_side_tiles[0].tile_background_image[3].url + ')'
+        "
+      >
+        <small>{{ item.menu_side_tiles[3].tile_first_text }}</small>
+        <small>{{ item.menu_side_tiles[3].tile_second_text }}</small>
+      </div>
+      <div class="menus-upload-tile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30px"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <div class="menus-upload-text">
+          <small>{{ item.menu_side_tiles[4].tile_first_text }}</small>
+          <small>{{ item.menu_side_tiles[4].tile_second_text }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

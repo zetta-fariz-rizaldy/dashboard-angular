@@ -1,0 +1,99 @@
+.nav-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 30px 80px 30px 80px
+
+
+    .logo
+        h2
+            font-weight: 100
+            color: white
+
+            span
+                font-weight: 500
+
+    .search-bar
+        input
+            background-color: white
+            border-width: 0px
+            width: 500px
+            box-shadow: inset 0px 0px 0px 1px #964850
+            padding: 8px 10px 8px 10px
+            margin: 5px 10px 0px 10px
+            color: #953E46
+            &:focus
+                @extend input
+                outline: none
+                box-shadow: inset 0px 0px 2px 2px #964850
+    
+    .upload-bar
+        button
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: white
+            border-width: 0px
+            width: 120px
+            box-shadow: inset 0px 0px 0px 1px #964850
+            padding: 8px 10px 8px 10px
+            margin: 5px 10px 0px 10px
+            color: #953E46
+            &:focus
+                @extend input
+                outline: none
+                box-shadow: inset 0px 0px 2px 2px #964850
+            
+            .button-text
+                background-color: white
+                margin-left: 5px
+                font-weight: 600
+            
+            .button-svg
+                background-color: white
+
+                svg
+                    background-color: white
+    
+    .profile-section
+        display: flex
+        align-items: center
+
+        .profile-bar     
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: white
+            border-width: 0px
+            width: 18px
+            box-shadow: inset 0px 0px 0px 1px #964850
+            padding: 8px 10px 8px 10px
+            margin: 5px 5px 0px 10px
+            color: #953E46
+
+            svg
+                background-color: white
+        
+        .user-name
+            color: white
+            align-items: center
+
+            .first-name
+                font-size: 15px
+
+            .last-name
+                font-size: 10px
+
+.undernav-container
+    margin: 10px 80px 30px 80px
+
+    .undernav-items
+        display: flex
+        margin: 10px 0px 10px 0px
+        color: white
+        font-weight: normal
+
+        p
+            margin-right: 20px
+            cursor: pointer                   
+
